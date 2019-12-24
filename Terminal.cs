@@ -9,6 +9,7 @@ namespace Turniket_OOP
     static class Terminal
     {
         //JSON
+<<<<<<< HEAD
         public static void Validete(Student traspasser)
         {
             if(traspasser == null)
@@ -25,5 +26,18 @@ namespace Turniket_OOP
                 }
             }
         }
+=======
+        public static bool Validete(Student traspasser)
+        {
+            if (traspasser == null)
+            {
+                return false;
+            }
+
+            string path = "D:\\Turniket_OOP/Turniket_OOP/" + traspasser.Group + ".txt";
+            List<Student> students = Facultet.Students;
+            return students.Contains(traspasser);
+        } 
+>>>>>>> Work Project
     }
 }
